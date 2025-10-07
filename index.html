@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda Campus</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda Campus</h1>
+    <nav>
+      <button>Papelería</button>
+      <button>Electrónica</button>
+      <button>Snacks</button>
+    </nav>
+  </header>
+
+  <main id="contenido"></main>
+
+  <footer>
+    Universidad XYZ – Tienda Campus 2025
+  </footer>
+
+  <script>
+    const productos = [
+      { nombre: "Cuaderno Profesional", precio: 45 },
+      { nombre: "Lápiz HB", precio: 5 },
+      { nombre: "USB 16GB", precio: 120 }
+    ];
+
+    const contenedor = document.getElementById("contenido");
+    productos.forEach(p => {
+      const item = document.createElement("p");
+      item.textContent = `${p.nombre} – $${p.precio}`;
+      contenedor.appendChild(item);
+    });
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker registrado con éxito.'));
+    }
+  </script>
+</body>
+</html>
