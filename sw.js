@@ -1,13 +1,11 @@
 
 /*
 ¿Cómo beneficia a los usuarios cargar rápido el App Shell aunque no haya conexión?
-El App Shell permite que la interfaz cargue rápido incluso sin conexión,
-porque el HTML, CSS y estructura base se almacenan en caché.
+El App Shell permite que la interfaz cargue rápido incluso sin conexión, porque el HTML, CSS y estructura base se almacenan en caché.
 
 ¿Qué diferencia hay entre el shell y los productos dinámicos?
 
-El "shell" es la estructura fija (layout, menú, header/footer),
-y los productos dinámicos son datos que cambian (JSON o API).
+El "shell" es la estructura fija (layout, menú, header/footer) y los productos dinámicos son datos que cambian (JSON o API).
 */
 
 
